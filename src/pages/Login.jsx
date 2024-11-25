@@ -41,20 +41,20 @@ navigate("/landing", {state:{user:login}})
 
    
     return(
-        <div className="bg-black p-10" >
+        <div className="bg-gradient-to-r from-purple-500 to-blue-500 p-10 flex items-center justify-center min-h-screen " >
 
-        <div className="bg-[#EFEFEF] p-10 border rounded-md ">
-            <h1 className="text-3xl font-medium">Hey Hi</h1>
-            {ruser?<p>I help you manage your activities after you login :)</p>:<p className="text-red-800"> "Please SignUp before login"</p>}
-            <div className="flex flex-col gap-2">
-                <input value={login} onChange={handleInput} className=" w-52 bg-transparent border border-black rounded-md p-1" type="text" placeholder="Username" />
-                <input value={pass} onChange={handlePassword} className=" w-52 bg-transparent border border-black rounded-md p-1" type="text" placeholder="Password" />
+        <div className="bg-white shadow-lg rounded-lg p-16 ">
+            <h1 className="text-3xl font-semibold text-center text-gray-800">Hey Hi</h1>
+            {ruser?<p className="text-center text-gray-600 mt-2">I help you manage your activities after you login :)</p>:<p className="text-red-600 text-center mt-2"> "Please SignUp before login"</p>}
+            <div className="flex flex-col gap-2 mt-6">
+                <input value={login} onChange={handleInput} className=" w-full bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-purple-500" type="text" placeholder="Username" />
+                <input value={pass} onChange={handlePassword} className=" w-full bg-gray-100 border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-purple-500" type="text" placeholder="Password" />
                 
-                <button onClick={checkUser} className="bg-[#8271D9] w-24 border p-1 rounded-md ">Login</button>
+                <button onClick={checkUser} className="bg-purple-600 text-white w-full py-2 rounded-md hover:bg-purple-700 transition duration-200 ">Login</button>
             </div>
-            <p >Don't Have an account? <Link className="underline" to="/signup">SignUp</Link>  </p>
+            <p className="text-center mt-4">Don't Have an account? <Link className="underline text-purple-600" to="/signup">SignUp</Link>  </p>
         </div>
-
+text-purple-600
 
     </div>
     )
