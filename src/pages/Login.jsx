@@ -54,7 +54,7 @@ navigate("/landing", {state:{user:login}})
             </div>
             <p className="text-center mt-4">Don't Have an account? <Link className="underline text-purple-600" to="/signup">SignUp</Link>  </p>
         </div>
-text-purple-600
+
 
     </div>
     )
